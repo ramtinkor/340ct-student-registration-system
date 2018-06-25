@@ -28,20 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblRegister = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblRegister
+            // 
+            this.lblRegister.AutoSize = true;
+            this.lblRegister.Location = new System.Drawing.Point(109, 229);
+            this.lblRegister.Name = "lblRegister";
+            this.lblRegister.Size = new System.Drawing.Size(41, 13);
+            this.lblRegister.TabIndex = 0;
+            this.lblRegister.Text = "register";
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 395);
+            this.Controls.Add(this.lblRegister);
             this.Name = "frmLogin";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblRegister;
     }
 }
 
