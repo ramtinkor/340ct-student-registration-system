@@ -16,5 +16,36 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "Username") { txtUsername.Clear(); }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsername_Click(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "Username") { txtUsername.Clear(); }
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+
+            if (txtPassword.Text == "Password") { txtPassword.Clear(); }
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
