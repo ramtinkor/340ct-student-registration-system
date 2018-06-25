@@ -42,6 +42,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtFName
@@ -52,6 +53,7 @@
             this.txtFName.Size = new System.Drawing.Size(367, 22);
             this.txtFName.TabIndex = 0;
             this.txtFName.Text = "First Name";
+            this.txtFName.Click += new System.EventHandler(this.txtFName_Click);
             // 
             // txtNumber
             // 
@@ -89,6 +91,7 @@
             this.txtSName.Size = new System.Drawing.Size(367, 22);
             this.txtSName.TabIndex = 4;
             this.txtSName.Text = "Surname";
+            this.txtSName.Click += new System.EventHandler(this.txtSName_Click);
             // 
             // label1
             // 
@@ -110,6 +113,7 @@
             this.txtPassword.Size = new System.Drawing.Size(367, 22);
             this.txtPassword.TabIndex = 7;
             this.txtPassword.Text = "Password";
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtUsername
             // 
@@ -127,17 +131,18 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(367, 22);
             this.textBox1.TabIndex = 8;
-            this.textBox1.Text = "Password";
+            this.textBox1.Text = "Confirm Password";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Corbel", 8.25F);
             this.label2.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.label2.Location = new System.Drawing.Point(78, 173);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 14);
+            this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "please Enter...";
             // 
@@ -188,6 +193,23 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Enrol";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Computer Science ",
+            "History",
+            "literature",
+            "mechanical engineering",
+            "Law"});
+            this.comboBox1.Location = new System.Drawing.Point(81, 556);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(365, 21);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.Text = "Select course ";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // frmRegistration_page
             // 
@@ -196,6 +218,7 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.professional_background_images_hd_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 690);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -232,5 +255,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
