@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class registration_page : Form
+    public partial class frmRegistration_page : Form
     {
-        public registration_page()
+        public frmRegistration_page()
         {
             InitializeComponent();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

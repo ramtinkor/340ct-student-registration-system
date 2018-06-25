@@ -47,5 +47,16 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        frmRegistration_page reistration = new frmRegistration_page(); 
+
+
+        
+        private void lblRegister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            reistration.Show();
+            
+        }
     }
 }

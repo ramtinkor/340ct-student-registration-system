@@ -41,7 +41,7 @@
             this.btnLogin.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(42, 280);
+            this.btnLogin.Location = new System.Drawing.Point(42, 266);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(148, 33);
             this.btnLogin.TabIndex = 0;
@@ -57,6 +57,7 @@
             this.lblRegister.Size = new System.Drawing.Size(63, 23);
             this.lblRegister.TabIndex = 2;
             this.lblRegister.Text = "Register";
+            this.lblRegister.Click += new System.EventHandler(this.lblRegister_Click);
             // 
             // txtUsername
             // 
@@ -72,7 +73,7 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(10, 215);
+            this.txtPassword.Location = new System.Drawing.Point(10, 201);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(222, 24);
             this.txtPassword.TabIndex = 4;
