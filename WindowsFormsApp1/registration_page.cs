@@ -27,7 +27,11 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             enrol.Show();
-            this.Hide(); 
+            this.Hide();
+
+            Student.username = txtUsername.Text;
+
+
 
         }
 

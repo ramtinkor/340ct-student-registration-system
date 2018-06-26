@@ -65,6 +65,7 @@
     <Compile Include="registration_page.Designer.cs">
       <DependentUpon>registration_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student.cs" />
     <EmbeddedResource Include="FrmEmail_ID.resx">
       <DependentUpon>FrmEmail_ID.cs</DependentUpon>
     </EmbeddedResource>

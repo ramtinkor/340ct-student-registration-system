@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblSID = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -71,19 +74,42 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Student ID";
             // 
+            // lblEmail
+            // 
+            this.lblEmail.Location = new System.Drawing.Point(135, 223);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(246, 23);
+            this.lblEmail.TabIndex = 13;
+            this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblSID
+            // 
+            this.lblSID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSID.Location = new System.Drawing.Point(135, 282);
+            this.lblSID.Name = "lblSID";
+            this.lblSID.Size = new System.Drawing.Size(246, 23);
+            this.lblSID.TabIndex = 14;
+            this.lblSID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(135, 223);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label4.Location = new System.Drawing.Point(1, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(246, 23);
-            this.label4.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(135, 282);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(246, 23);
-            this.label5.TabIndex = 14;
+            this.label4.Size = new System.Drawing.Size(408, 42);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "enrolment complete use your username and password to log in. Here is university e" +
+    "mail and student ID number. ";
             // 
             // FrmEmail_ID
             // 
@@ -92,13 +118,15 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.professional_background_images_hd_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(651, 516);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblSID);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "FrmEmail_ID";
             this.Text = "FrmEmail_ID";
+            this.Load += new System.EventHandler(this.FrmEmail_ID_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,7 +137,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblSID;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
     }
 }
