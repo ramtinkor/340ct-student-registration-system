@@ -26,10 +26,28 @@ namespace WindowsFormsApp1
         FrmEmail_ID enrol = new FrmEmail_ID(); 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            //click event
+            //once the user has entered all the information reuired then they click on the sumbit button. this tiggers
+            //two new process. one to open the enrolement screen and to close this one. also to store all the information
+            //into the student records. 
+
+
+            //enrolment page being opened. 
             enrol.Show();
             this.Hide();
 
+
+            //student information being saved 
             Student.username = txtUsername.Text;
+            Student.Address = txtAddress.Text;
+            Student.Fname = txtFName.Text;
+            Student.Sname = txtSName.Text;
+            Student.CNumber = txtNumber.Text;
+            Student.course = comboBox1.Text;
+
+
+
 
 
 

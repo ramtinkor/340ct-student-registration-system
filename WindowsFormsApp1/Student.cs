@@ -10,6 +10,7 @@ namespace WindowsFormsApp1
     {
         public static string username;
         public static string UniversityEmail = "@university.co.uk";
+        public static string studentEmail;
 
         public static int studentID;
         public static string Fname;
@@ -17,6 +18,7 @@ namespace WindowsFormsApp1
         public static string Address;
         public static string CNumber;
         public static string password;
+        public static string course;  
 
     }
 }

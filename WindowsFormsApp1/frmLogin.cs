@@ -48,12 +48,16 @@ namespace WindowsFormsApp1
 
         }
 
-        frmRegistration_page reistration = new frmRegistration_page(); 
 
 
+
+
+        frmRegistration_page reistration = new frmRegistration_page();
         
         private void lblRegister_Click(object sender, EventArgs e)
         {
+            //click event once the student clicks on the register link then open the registration  screen. 
+
             this.Hide();
             reistration.Show();
             

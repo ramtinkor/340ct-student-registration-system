@@ -35,7 +35,7 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSID = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -99,16 +99,16 @@
             this.timer1.Interval = 1;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label4
+            // lbl
             // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label4.Location = new System.Drawing.Point(1, 160);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(408, 42);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "enrolment complete use your username and password to log in. Here is university e" +
+            this.lbl.BackColor = System.Drawing.Color.Transparent;
+            this.lbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.lbl.Location = new System.Drawing.Point(1, 160);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(408, 42);
+            this.lbl.TabIndex = 15;
+            this.lbl.Text = "enrolment complete use your username and password to log in. Here is university e" +
     "mail and student ID number. ";
             // 
             // FrmEmail_ID
@@ -118,7 +118,7 @@
             this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.professional_background_images_hd_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(651, 516);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl);
             this.Controls.Add(this.lblSID);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.label1);
@@ -140,6 +140,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblSID;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl;
     }
 }
